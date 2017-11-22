@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
-import scrapy
-from BaseTemp.items import BasetempItem
-from datetime import datetime
 import re
-from BaseTemp.utils import header_list
+from datetime import datetime
+
+import scrapy
+
+from BaseTemp.items import BasetempItem
+from BaseTemp.tools import header_list
 
 
 class ImdbSpider(scrapy.Spider):
@@ -12,16 +14,19 @@ class ImdbSpider(scrapy.Spider):
     start_urls = ['http://www.imdb.cn/nowplaying/1']
 
     custom_settings = {
+        # do not needs login project
         'COOKIES_ENABLED': False,
         'ITEM_PIPELINES':{
             'BaseTemp.pipelines.ImdbMongoPipeline': 300,
         },
+        # do not needs login project
+        'DOWNLOADER_MIDDLEWARES':{
+            'BaseTemp.middlewares.UserAgentMiddleware': 200,
+        },
         'MONGO_DB':'imdb',
-        # 'MONGO_COLLECTION':'movie',
         'JOBDIR': 'info/imdb.com/001',
         # 'LOG_FILE':'imdb_log.txt',
     }
-
     headers = header_list.get_header()
 
     def parse(self, response):
@@ -32,7 +37,7 @@ class ImdbSpider(scrapy.Spider):
                 yield scrapy.Request(url=response.urljoin(url),headers=self.headers,callback=self.parse_movie)
 
             next_page = 'http://www.imdb.cn/nowplaying/{0}'.format(page)
-            yield scrapy.Request(url=next_page,headers=self.headers,callback=self.parse)
+            yield scrapy.Request(url=next_page,callback=self.parse)
 
 
     def parse_movie(self,response):

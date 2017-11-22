@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 # scrapy genspider -t imdbcrawl www.imdb.com
-import scrapy
+import re
+from datetime import datetime
+
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
+
 from BaseTemp.items import BasetempItem
-from datetime import datetime
-import re
-from BaseTemp.utils import header_list
+from BaseTemp.tools import header_list
 
 
 class ImdbcrawlSpider(CrawlSpider):
@@ -25,12 +26,16 @@ class ImdbcrawlSpider(CrawlSpider):
     headers = header_list.get_header()
 
     custom_settings = {
+        # do not needs login project
         'COOKIES_ENABLED': False,
-        'ITEM_PIPELINES': {
+        'ITEM_PIPELINES':{
             'BaseTemp.pipelines.ImdbMongoPipeline': 300,
         },
-        'MONGO_DB': 'imdb',
-        # 'MONGO_COLLECTION':'movie',
+        # do not needs login project
+        'DOWNLOADER_MIDDLEWARES':{
+            'BaseTemp.middlewares.UserAgentMiddleware': 200,
+        },
+        'MONGO_DB':'imdb',
         'JOBDIR':'info/imdbcrawl.cn/001',
 
     }

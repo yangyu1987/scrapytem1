@@ -35,3 +35,26 @@ class BasetempItem(scrapy.Item):
 
         return mongo_collection,data
 
+class PhoneItem(scrapy.Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    #抓取时间
+    crawl_time = scrapy.Field()
+    phone_num = scrapy.Field()
+    area = scrapy.Field()
+    service_provider = scrapy.Field()
+
+    mongo_collection = scrapy.Field()
+
+    def mongo_insert(self):
+
+        data = {
+            'crawl_time':self['crawl_time'],
+            'phone_num': self['phone_num'],
+            'area': self['area'],
+            'service_provider': self['service_provider'],
+        }
+        mongo_collection = self['mongo_collection']
+
+        return mongo_collection,data
+
