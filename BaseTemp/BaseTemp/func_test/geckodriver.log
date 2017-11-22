@@ -1,0 +1,78 @@
+1511376416157	geckodriver	INFO	geckodriver 0.19.1
+1511376416159	geckodriver	INFO	Listening on 127.0.0.1:44997
+1511376417269	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.dXEITJIqi9TQ"
+1511376418158	Marionette	INFO	Enabled via --marionette
+1511376420360	Marionette	INFO	Listening on port 45457
+1511376420449	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511376420512	Marionette	DEBUG	Register listener.js for window 2147483649
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1511376457823	geckodriver	INFO	geckodriver 0.19.1
+1511376457825	geckodriver	INFO	Listening on 127.0.0.1:45991
+1511376458916	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.j5NyIWkj6m3b"
+1511376459438	Marionette	INFO	Enabled via --marionette
+1511376460946	Marionette	INFO	Listening on port 46721
+1511376461034	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511376461096	Marionette	DEBUG	Register listener.js for window 2147483649
+1511376461130	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511376461549	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511376461549	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+1511376461913	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.baidu.com/"
+1511376461977	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.baidu.com/"
+1511376587087	geckodriver	INFO	geckodriver 0.19.1
+1511376587090	geckodriver	INFO	Listening on 127.0.0.1:52117
+1511376588181	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.y5HM9dZjbK43"
+1511376588652	Marionette	INFO	Enabled via --marionette
+1511376590333	Marionette	INFO	Listening on port 39497
+1511376590438	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511376590508	Marionette	DEBUG	Register listener.js for window 2147483649
+1511376590533	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511376591469	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511376591470	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511376591985	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.chahaoba.com/index.php?title=%E5%88%86%E7%B1%BB:%E9%AA%97%E5%AD%90%E5%8F%B7%E7%A0%81&amp%3Bpagefrom=%2B02227393016%EF%BC%9B%2B37911183&pagefrom=%2B0222999767#mw-pages"
+1511376599281	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483687"
+1511376599393	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.chahaoba.com/index.php?title=%E5%88%86%E7%B1%BB:%E9%AA%97%E5%AD%90%E5%8F%B7%E7%A0%81&amp%3Bpagefrom=%2B02227393016%EF%BC%9B%2B37911183&pagefrom=%2B0222999767#mw-pages"
+1511376910643	geckodriver	INFO	geckodriver 0.19.1
+1511376910646	geckodriver	INFO	Listening on 127.0.0.1:53111
+1511376911735	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.sw8EUsJUwwdq"
+1511376912244	Marionette	INFO	Enabled via --marionette
+1511376914094	Marionette	INFO	Listening on port 34357
+1511376914111	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511376914187	Marionette	DEBUG	Register listener.js for window 2147483649
+1511376914222	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511376915129	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511376915130	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511376915550	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.chahaoba.com/index.php?title=%E5%88%86%E7%B1%BB:%E9%AA%97%E5%AD%90%E5%8F%B7%E7%A0%81&amp%3Bpagefrom=%2B02227393016%EF%BC%9B%2B37911183&pagefrom=%2B12669280452#mw-pages"
+1511376921727	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.chahaoba.com/index.php?title=%E5%88%86%E7%B1%BB:%E9%AA%97%E5%AD%90%E5%8F%B7%E7%A0%81&amp%3Bpagefrom=%2B02227393016%EF%BC%9B%2B37911183&pagefrom=%2B12669280452#mw-pages"
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1511377053332	geckodriver	INFO	geckodriver 0.19.1
+1511377053335	geckodriver	INFO	Listening on 127.0.0.1:47871
+1511377054427	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.W6qWF8fubkuC"
+1511377054984	Marionette	INFO	Enabled via --marionette
+1511377056449	Marionette	INFO	Listening on port 38379
+1511377056548	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511377056601	Marionette	DEBUG	Register listener.js for window 2147483649
+1511377056621	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511377057268	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511377057269	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511377057687	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.chahaoba.com/index.php?title=%E5%88%86%E7%B1%BB:%E9%AA%97%E5%AD%90%E5%8F%B7%E7%A0%81&amp%3Bpagefrom=%2B02227393016%EF%BC%9B%2B37911183&pagefrom=%2B12669280452#mw-pages"
+1511377066946	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.chahaoba.com/index.php?title=%E5%88%86%E7%B1%BB:%E9%AA%97%E5%AD%90%E5%8F%B7%E7%A0%81&amp%3Bpagefrom=%2B02227393016%EF%BC%9B%2B37911183&pagefrom=%2B12669280452#mw-pages"
+1511377111283	geckodriver	INFO	geckodriver 0.19.1
+1511377111287	geckodriver	INFO	Listening on 127.0.0.1:50139
+1511377112407	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.J6GgdjKbOb1j"
+1511377112937	Marionette	INFO	Enabled via --marionette
+1511377114584	Marionette	INFO	Listening on port 34957
+1511377114643	Marionette	WARN	TLS certificate errors will be ignored for this session
+1511377114702	Marionette	DEBUG	Register listener.js for window 2147483649
+1511377114731	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1511377115470	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1511377115471	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1511377115868	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.chahaoba.com/index.php?title=%E5%88%86%E7%B1%BB:%E9%AA%97%E5%AD%90%E5%8F%B7%E7%A0%81&amp%3Bpagefrom=%2B02227393016%EF%BC%9B%2B37911183&pagefrom=%2B223056258#mw-pages"
+1511377122467	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "2147483691"
+1511377171886	Marionette	DEBUG	Register listener.js for window 2147483693
+1511377172010	Marionette	DEBUG	Register listener.js for window 2147483695
+1511377212752	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.chahaoba.com/index.php?title=%E5%88%86%E7%B1%BB:%E9%AA%97%E5%AD%90%E5%8F%B7%E7%A0%81&amp%3Bpagefrom=%2B02227393016%EF%BC%9B%2B37911183&pagefrom=%2B223056258#mw-pages"
+[Child 7536, Chrome_ChildThread] WARNING: pipe error: 断开的管道: file /build/firefox-HLWaua/firefox-57.0+build4/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Parent 7658, Gecko_IOThread] WARNING: pipe error (108): 连接被对方重设: file /build/firefox-HLWaua/firefox-57.0+build4/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
